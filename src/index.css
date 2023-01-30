@@ -1,13 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.5rem;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input[type="text"],
+button {
+  font: inherit;
+}
+/*  */
+
+article {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid hsl(0, 0%, 58%);
+  background-color: azure;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.maintitle {
+  color: red;
+}
+.todo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input[type="checkbox"] {
+  min-width: 30px;
+  min-height: 30px;
+  margin-right: 1rem;
+}
+
+button {
+  min-width: 50px;
+  min-height: 50px;
+  border: none;
+  border-radius: 20%;
+  cursor: pointer;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.trash {
+  background-color: #fff;
+  color: rgb(21, 199, 51);
+}
+
+.trash:focus,
+.trash:hover {
+  filter: brightness(120%);
+}
+
+form {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #333;
+  margin-bottom: 1rem;
+}
+
+form label {
+  position: absolute;
+  left: -10000px;
+}
+
+.new-todo {
+  width: 100%;
+  padding-right: 30px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 0.5px solid #333;
+}
+
+.submit {
+  background-color: gray;
+  color: #fff;
+}
+
+.submit:focus,
+.submit:hover {
+  background-color: rgb(55, 122, 119);
 }
